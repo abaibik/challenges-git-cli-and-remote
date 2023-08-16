@@ -4,19 +4,27 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,400;0,500;1,400&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body
     style="
       background-image: url(pawel-czerwinski-NJdfP9AlPjc-unsplash.jpg);
       background-size: contain;
       background-repeat: no-repeat;
+      font-family: 'Kanit', sans-serif;
+      width: 700px;
     "
   >
     <main style="padding: 2rem">
       <nav>
         <ul style="display: flex; gap: 5rem; padding-left: 17rem">
           <li>Contact</li>
-          <li>Biography</li>
+          <li><a href="#skills">Skills</a></li>
         </ul>
       </nav>
       <article>
@@ -47,7 +55,9 @@
           >abaibik@gmail.com</a
         >
       </section>
-      <section style="display: flex">
+      <section
+        style="width: 100%; display: flex; justify-content: space-around"
+      >
         <a href="https://github.com/abaibik" style="text-decoration: none"
           ><img src="github.png" width="85" height="85"
         /></a>
@@ -59,10 +69,14 @@
         <a
           style="text-decoration: none"
           href="https://www.linkedin.com/in/aleksandra-baibik-08340594/"
-          ><img src="linkedin.png" width="100" height="100"
+          ><img
+            src="linkedin.png"
+            width="90"
+            height="90"
+            style="border-radius: 20%"
         /></a>
       </section>
-      <section style="display: flex; gap: 10rem; padding-top: 2rem">
+      <section id="skills" style="display: flex; gap: 10rem; padding-top: 2rem">
         <div>
           <h2>My skills</h2>
           <ul>
@@ -88,7 +102,9 @@
       </section>
     </main>
     <footer style="padding-left: 5rem">
-      <span>The site is still under development, stay tuned...</span>
+      <span style="font-style: italic"
+        >The site is still under development, stay tuned...</span
+      >
     </footer>
   </body>
 </html>
