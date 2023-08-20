@@ -10,75 +10,45 @@
       href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,400;0,500;1,400&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="index.css" />
   </head>
-  <body
-    style="
-      background-image: url(pawel-czerwinski-NJdfP9AlPjc-unsplash.jpg);
-      background-size: contain;
-      background-repeat: no-repeat;
-      font-family: 'Kanit', sans-serif;
-      width: 700px;
-    "
-  >
-    <main style="padding: 2rem">
-      <nav>
-        <ul style="display: flex; gap: 5rem; padding-left: 17rem">
-          <li>Contact</li>
-          <li><a href="#skills">Skills</a></li>
-        </ul>
-      </nav>
-      <article>
+  <body>
+    <div class="animatedwrapper">
+      <div class="dot dot--one"></div>
+      <div class="dot dot--two"></div>
+      <div class="dot dot--three"></div>
+    </div>
+
+    <nav>
+      <ul class="navigation">
+        <li><a href="#contacts">Contacts</a></li>
+        <li><a href="#skills">Skills</a></li>
+      </ul>
+    </nav>
+
+    <main>
+      <section>
         <h1>Aleksandra Baibik</h1>
-        <div style="display: flex; gap: 5rem; margin-top: 4rem">
-          <img
-            src="avatar2.jpg"
-            alt="My photo"
-            width="200"
-            height="300"
-            style="border-radius: 10%"
-          />
-          <div>
-            <span>My hobbies are:</span>
-            <ul>
-              <li>make cocktails</li>
-              <li>bake buns</li>
-              <li>appartment renovations</li>
-              <li>casual games</li>
-              <li>and many more</li>
-            </ul>
+        <div class="summary">
+          <div class="blured-background">
+            <div class="blur">
+              <img class="avatar" src="avatar2.png" alt="My photo" />
+            </div>
           </div>
+          <p class="summary-text">
+            Goal-oriented professional with 1 year experience in Web-Development
+            and 6 years in Sales and Trainings. Passionate about problem
+            solving, quality of software and being apart of a team.
+            Highly-motivated and creative thinker. Seeking full-time Web
+            Developer role to apply empathy, technical knowledge and attention
+            to detail to provide an exciting andeasy-to-use app experience to
+            users.
+          </p>
         </div>
-      </article>
-      <section style="padding: 2rem; display: flex; gap: 10rem">
-        <span>0176 219 86 527</span>
-        <a style="text-decoration: none" href="mailto:abaibik@gmail.com"
-          >abaibik@gmail.com</a
-        >
       </section>
-      <section
-        style="width: 100%; display: flex; justify-content: space-around"
-      >
-        <a href="https://github.com/abaibik" style="text-decoration: none"
-          ><img src="github.png" width="85" height="85"
-        /></a>
-        <a
-          href="https://codepen.io/osexfexa-the-solid"
-          style="text-decoration: none"
-          ><img src="codepen.svg" width="100" height="100"
-        /></a>
-        <a
-          style="text-decoration: none"
-          href="https://www.linkedin.com/in/aleksandra-baibik-08340594/"
-          ><img
-            src="linkedin.png"
-            width="90"
-            height="90"
-            style="border-radius: 20%"
-        /></a>
-      </section>
-      <section id="skills" style="display: flex; gap: 10rem; padding-top: 2rem">
+      <section id="skills">
         <div>
-          <h2>My skills</h2>
+          <h2>Skills</h2>
           <ul>
             <li>JavaScript</li>
             <li>HTML, CSS</li>
@@ -100,10 +70,33 @@
           </ul>
         </div>
       </section>
+      <section id="contacts">
+        <h2>Contacts</h2>
+        <div class="number-and-email"></div>
+        <p class="tnumber">0176 219 86 527</p>
+
+        <a class="email" href="mailto:abaibik@gmail.com">abaibik@gmail.com</a>
+
+        <div class="links">
+          <a href="https://github.com/abaibik" style="text-decoration: none"
+            ><img class="link-img" src="github.png"
+          /></a>
+          <a
+            href="https://codepen.io/osexfexa-the-solid"
+            style="text-decoration: none"
+            ><img class="link-img" src="codepen.svg"
+          /></a>
+          <a
+            style="text-decoration: none"
+            href="https://www.linkedin.com/in/aleksandra-baibik-08340594/"
+            ><img class="link-img" src="linkedin.png"
+          /></a>
+        </div>
+      </section>
     </main>
-    <footer style="padding-left: 5rem">
+    <footer>
       <span style="font-style: italic"
-        >The site is still under development, stay tuned...</span
+        >&copy; 2023 The site is still under development, stay tuned...</span
       >
     </footer>
   </body>
